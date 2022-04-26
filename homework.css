@@ -1,0 +1,87 @@
+html {
+    font-family: fantasy;
+    background-color: whitesmoke;
+}
+#header {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    display: flex;
+    flex: 3;
+    font-size: 6rem;
+    font-family:fantasy;
+    color:whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    justify-content: center;
+    margin: 0;
+}
+nav {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: space-evenly;;
+    font-size: 1rem;
+}
+.nav-item {
+    display: flex;
+    padding: 1rem;
+}
+.nav-item:hover {
+    color: peachpuff;
+    transition: background-color 1s;
+}
+#about {
+    background-image: url(https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbCUyMGFlc3RoZXRpY3xlbnwwfHwwfHw%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro {
+    width: 100%;
+    height: 80%;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.start-button {
+    font-size: 1rem;
+    border-radius: 10px;
+    font-family: fantasy;
+    background-color: lightgray;
+}
+.pick-text {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    font-size: 100px;
+    text-align: center;
+}
+#destinations > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.country {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-color: black;
+    margin: 1rem;
+    border-radius: 3rem;
+    border-color: white;
+}
+.country:hover {
+    background-color:darksalmon;
+    border: thick double gray;
+    transition: 1s;
+}
+.country-name {
+    text-shadow: 2px 2px 4px gray;
+    text-align: center;
+}
