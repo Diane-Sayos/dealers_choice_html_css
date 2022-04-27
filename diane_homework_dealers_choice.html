@@ -1,21 +1,34 @@
 <html>
+
     <head>
         <title>Didi TRAVEL CHEATS</title>
         <link rel="stylesheet" href="homework.css"></link>
     </head>
+
     <body style="margin:0;">
         <!-- <div style="background-image: url('Image_Location'); height:480px; padding-top:80px;"></div> -->
         <header id="header">
-            <h1>Didi TRAVEL CHEATS</h1>
+            <div>
+                <input class="search-bar" type="search"  id="mySearch" name="q">
+                <button>Search</button>
+            </div>
+        </header>
+
+        <h1>Didi TRAVEL CHEATS</h1>
+
+        <hr>
+
+        <section id="nav-bar">
             <nav>
                 <div class="nav-item">HOME</div>
+                <div class="nav-item">PLAN YOUR TRIP</div>
+                <div class="nav-item">TRAVEL ESSENTIALS</div>
                 <div class="nav-item">DESTINATION</div>
-                <div class="nav-item">PHOTOGRAPHY</div>
-                <div class="nav-item">BLOG</div>
-                <div class="nav-item">CONTACT</div>
             </nav>
-        </header>
+        </section>
+
         <hr>
+
         <section id="about">
             <div class="intro">
                 <h2 class="welcome">Welcome to Didi TRAVEL CHEATS!</h2>
@@ -23,51 +36,602 @@
                     Your guide to that new country you've been wanting to visit!
                 </p>
                 <p class="welcome-par">
-                    Pick a destination and get a list of places you must visit.
+                    We'll help prepare to make that trip happen.
                 </p>
                 <input class="start-button" type="button" value="Let's Begin!">
             </div>
         </section>
-        <section id="destinations">
-            <h2 class="pick-text">Pick a Destination:</h2>
-            <div>
-                <div class= "country">
-                    <div class="flag">
-                        <img src="https://cdn.countryflags.com/thumbs/hongkong/flag-round-250.png" style="width:150px; height:150px;" alt="flag"/>
+
+        <section id="plan-trip">
+            <!-- plan trip title -->
+            <hr>
+            <h2 class="pick-title">PLAN YOUR TRIP</h2>
+            <hr>
+            <!-- flight, hotel, transportation, expenses -->
+            <div id="content">
+                <!-- flight === whole flight section -->
+                <div id="flight">
+                    <h3>FLIGHT DETAILS</h3>
+                    <!-- logo-list === flight list and logo -->
+                    <div class="logo-list-1">
+                        <!-- flight-list === departure and arrival -->
+                        <div class="flight-list">
+                            <!-- departure title and list -->
+                            <div class="departure">
+                                <h4>DEPARTURE:</h4>
+                                <div class="plan-details">
+                                    <div class="info-list">
+                                        <label for="uname">Flight Number: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                    <div class="info-list">
+                                        <label for="uname">Terminal: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                    <div class="info-list">
+                                        <label for="uname">Departure: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                    <div class="info-list">
+                                        <label for="uname">Arrival: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                    <div class="info-list">
+                                        <label for="uname">Airport: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- arrival title and list -->
+                            <div class="arrival">
+                                <h4>ARRIVAL:</h4>
+                                <div class="plan-details">
+                                    <div class="info-list">
+                                        <label for="uname">Flight Number: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                    <div class="info-list">
+                                        <label for="uname">Terminal: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                    <div class="info-list">
+                                        <label for="uname">Departure: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                    <div class="info-list">
+                                        <label for="uname">Arrival: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                    <div class="info-list">
+                                        <label for="uname">Airport: </label>
+                                        <input type="text" id="uname" name="name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeNbpGR8gpN4oF5X03z9V5KhZs_QXwf1c5vw&usqp=CAU" style="width:100%; height:100%" alt="logo"/>
+                        </div>
                     </div>
-                    <h3 class="country-name">Hong Kong</h3>
                 </div>
-                <div class="country">
-                    <div class="flag">
-                        <img src="https://cdn.countryflags.com/thumbs/macau/flag-round-250.png" style="width:150px; height:150px;" alt="macau flag"/>
+                <!-- hotel accomodations -->
+                <div id="hotel">
+                 <h3>HOTEL ACCOMODATION</h3>
+                    <div class="logo-list-2">
+                        <div class="plan-details">
+                            <div class="info-list">
+                                <label for="uname">Hotel Name: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                            <div class="info-list">
+                                <label for="uname">Hotel Address: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                            <div class="info-list">
+                                <label for="uname">Hotel Number: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                            <div class="info-list">
+                                <label for="uname">Number of Rooms: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                            <div class="info-list">
+                                <label for="uname">Duration of Stay: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                            <div class="info-list">
+                                <label for="uname">Reservation Number: </label>
+                                <input type="text" id="uname" name="name">
+                            </div> 
+                        </div>
+                        <div class="logo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL892zB6lK7az4t4fw7X_ocJjcwn6BWyimmw&usqp=CAU" style="width:100%; height:100%;" alt="logo"/>
+                        </div>
                     </div>
-                    <h3 class="country-name">Macau</h3>
                 </div>
-                <div class="country">
-                    <div class="flag">
-                        <img src="https://cdn.countryflags.com/thumbs/puerto-rico/flag-round-250.png" style="width:150px; height: 150px;" alt="pr flag"/>
+                <!-- transportation -->
+                <div id="transportation">
+                    <h3>TRANSPORTATION</h3>
+                    <div class="logo-list-1">
+                        <div class="plan-details">
+                            <div class="info-list">
+                                <div>
+                                    <label for="uname">Car Rental Company: </label>
+                                    <input type="text" id="uname" name="name">
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div>
+                                    <label for="uname">Car Rental Address: </label>
+                                    <input type="text" id="uname" name="name">
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div>
+                                    <label for="uname">Car Rental Number: </label>
+                                    <input type="text" id="uname" name="name">
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div>
+                                    <label for="uname">Duration of Rental: </label>
+                                    <input type="text" id="uname" name="name">
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div>
+                                    <label for="uname">Reservation Number: </label>
+                                    <input type="text" id="uname" name="name">
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="logo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-RyjX0hXNEfuzEpUqfYvS2FFI2qy_cuGYLg&usqp=CAU" style="width:100%; height:100%;" alt="logo"/>
+                        </div>
                     </div>
-                    <h3 class="country-name">Puerto Rico</h3>
                 </div>
-                <div class="country">
-                    <div class="flag">
-                        <img src="https://cdn.countryflags.com/thumbs/france/flag-button-round-250.png" style="width:150px; height: 150px" alt="france flag"/>
+                <!-- expenses -->
+                <div id="expenses">
+                    <h3>EXPENSES</h3>
+                    <div class="logo-list-2">
+                        <div class="plan-details">
+                            <div class="info-list">
+                                <label for="uname">Flight Cost: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                            <div class="info-list">
+                                <label for="uname">Hotel Cost: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                            <div class="info-list">
+                                <label for="uname">Transportation Cost: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                            <div class="info-list">
+                                <label for="uname">Miscellaneous Cost: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                            <div class="info-list">
+                                <label for="uname">Total Expenses: </label>
+                                <input type="text" id="uname" name="name">
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy6_aQO0ixEEO0KhB8VCIEosVOjL9SmEsBuQ&usqp=CAU" style="width:100%; height:100%;" alt="logo"/>
+                        </div>
                     </div>
-                    <h3 class="country-name">France</h3>
-                </div>
-                <div class="country">
-                    <div class="flag">
-                        <img src="https://cdn.countryflags.com/thumbs/italy/flag-round-250.png" style="width: 150px; height: 150px;" alt="italy flag"/>
-                    </div>
-                    <h3 class="country-name">Italy</h3>
-                </div>
-                <div class="country">
-                    <div class="flag">
-                        <img src="https://cdn.countryflags.com/thumbs/netherlands/flag-round-250.png" style="width:150px; height: 150px;" alt="nethrlands flag"/>
-                    </div>
-                    <h3 class="country-name">Netherlands</h3>
                 </div>
             </div>
+        </section>
+
+        <section id="essentials">
+            <hr>
+            <h2 class="pick-title">TRAVEL ESSENTIALS</h2>
+            <hr>
+            <div id="content">
+                <div class="logo-list-1">
+                    <div class="plan-list">
+                        <fieldset style="width:100%" >
+                            <legend>ELECTRONICS:</legend>
+                            <div class="plan-details">
+                                <div class="info-list">
+                                  <input type="checkbox" id="cp">
+                                  <label for="cp">Cell Phone</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="cp-charger">
+                                  <label for="cp-charger">Cell Phone Charger</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="adapter">
+                                  <label for="adapter">Universal Adapter</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="powerbank">
+                                  <label for="powerbank">Power Bank</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="camera">
+                                  <label for="camera">Camera</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="camera-battery">
+                                  <label for="camera-battery">Camera Battery</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="camera-charger">
+                                  <label for="camera-charger">Camera Charger</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="laptop">
+                                  <label for="laptop">Laptop</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="laptop-charger">
+                                  <label for="laptop-charger">Laptop Charger</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="headphones">
+                                  <label for="headphones">Headphones</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="headphones">
+                                  <label for="headphones">Headphones</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="logo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJs47Wyg-u19iaZ6kxuFoVIzwNsNBZ_43TmA&usqp=CAU" style="width:100%; height:100%;" alt="logo"/>
+                    </div>
+                </div>
+                <div class="logo-list-2">
+                    <div class="plan-list">
+                        <fieldset style="width:100%;" >
+                            <legend>DOCUMENTS:</legend>
+                            <div class="plan-details">
+                                <div class="info-list">
+                                  <input type="checkbox" id="passport">
+                                  <label for="passport">Passport</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="license">
+                                  <label for="license">Driver's License</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="vaccine">
+                                  <label for="vaccine">Covid Vaccination Card</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="test">
+                                  <label for="test">PCR Test or Rapid Test</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="visa">
+                                  <label for="visa">Travel Visa</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="itinerary">
+                                  <label for="itinerary">Flight Itinerary</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="hotel-booking">
+                                  <label for="hotel-booking">Hotel Booking Confirmation</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="car-booking">
+                                  <label for="car-booking">Car Rental Confirmation</label>
+                                </div>
+                                <div class="info-list">
+                                  <input type="checkbox" id="money">
+                                  <label for="money">Money</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="logo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcdzJZWd8F2ZOP02FMjlcl8d83o9UCbPL-nQ&usqp=CAU" style="width:100%; height:100%;" alt="logo"/>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="destinations">
+            <hr>
+            <h2 class="pick-title">Pick a Destination:</h2>
+            <hr>
+            <div id="content">
+                <div class= "country">
+                    <div class="flag">
+                        <img src="https://cdn.countryflags.com/thumbs/japan/flag-3d-round-500.png" style="width:100px; height:100px;" alt="flag"/>
+                    </div>
+                    <h5 class="country-name">JAPAN</h5>
+                </div>
+                <div class="country">
+                    <div class="flag">
+                        <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-3d-round-500.png" style="width:100px; height:100px;" alt="macau flag"/>
+                    </div>
+                    <h5 class="country-name">KOREA</h5>
+                </div>
+                <div class="country">
+                    <div class="flag">
+                        <img src="https://cdn.countryflags.com/thumbs/spain/flag-3d-round-500.png" style="width:100px; height: 100px;" alt="pr flag"/>
+                    </div>
+                    <h5 class="country-name">SPAIN</h5>
+                </div>
+                <div class="country">
+                    <div class="flag">
+                        <img src="https://cdn.countryflags.com/thumbs/france/flag-3d-round-500.png" style="width:100px; height: 100px" alt="france flag"/>
+                    </div>
+                    <h5 class="country-name">FRANCE</h5>
+                </div>
+                <div class="country">
+                    <div class="flag">
+                        <img src="https://cdn.countryflags.com/thumbs/italy/flag-3d-round-500.png" style="width: 100px; height: 100px;" alt="italy flag"/>
+                    </div>
+                    <h5 class="country-name">ITALY</h5>
+                </div>
+                <div class="country">
+                    <div class="flag">
+                        <img src="https://cdn.countryflags.com/thumbs/netherlands/flag-3d-round-500.png" style="width:100px; height: 100px;" alt="nethrlands flag"/>
+                    </div>
+                    <h5 class="country-name">NETHERLANDS</h5>
+                </div>
+            </div>
+        </section>
+
+        <section id="each-country">
+            <div id="country-list">
+                <hr>
+                <h3 class="pick-title">JAPAN</h3>
+                <hr>
+                <div id="content">
+                    <div class="city-info">
+                        <h4>Tokyo, Japan</h4>
+                        <div class="spots-list">
+                            <div class="spot-info">
+                                <img src="https://media.istockphoto.com/photos/tokyo-sky-tree-and-cherry-blossom-during-spring-at-japan-picture-id1133606482?k=20&m=1133606482&s=612x612&w=0&h=pPsJbSOvOVVooxaEMf99Ckpyxeq6sEF3BGHTygbY1pM="
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Tokyo Skytree</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/Tokyo-Tower.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Tokyo Tower</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Shinjuku_Gyoen_National_Garden_-_sakura_11.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Shinjuku Gyoen National Garden</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Rainbow_Bridge_%28Tokyo%29_at_night_2.JPG"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Rainbow Bridge</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://www.tokyoweekender.com/wp-content/uploads/2020/03/Roppongi-Hills-Tokyo-Weekender.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Roppongi Hills</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Nikko_Tosho-gu_Pagoda.jpg/220px-Nikko_Tosho-gu_Pagoda.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Nikkō Tōshō-gū</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3 class="pick-title">KOREA</h3>
+                <hr>
+                <div id="content">
+                    <div class="city-info">
+                        <h4>Seoul, Korea</h4>
+                        <div class="spots-list">
+                            <div class="spot-info">
+                                <img src="https://media.afar.com/uploads/images/post_images/images/P8AVsTSVBP/original_e30a5e10058c7167cd5e9cdcd65cc706.jpg?1464314013"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Gyeongbokgung Palace</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9f/ca/56/caption.jpg?w=1200&h=-1&s=1"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>N Seoul Tower</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://img.locationscout.net/images/2019-04/lotte-world-tower-seoul-south-korea-korea_l.jpeg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>LOTTE World</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://i.pinimg.com/originals/c1/a4/44/c1a44478eea01a434371f0b1d0a72ef8.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Namsangol Hanok Village</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6a/de/24.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Nami Island</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://myk-d.com/wp-content/uploads/2019/08/Seoul-River-MYKD-11-1-1440x768.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Cheonggyecheon</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3 class="pick-title">SPAIN</h3>
+                <hr>
+                <div id="content">
+                    <div class="city-info">
+                        <h4>Madrid, Spain</h4>
+                        <div class="spots-list">
+                            <div class="spot-info">
+                                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/11/18/20/istock-475444818.jpg?width=1200"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Museo Nacional del Prado</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img 
+                                src="https://cdn2.civitatis.com/espana/madrid/guia/puerta-alcala.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Puerta de Alcalá</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://images.prismic.io/mystique/3b8ac73e-f466-4dd6-8fe8-65c3645934f1_RPM+1-.jpg?auto=compress,format"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Royal Palace of Madrid</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://thumbs.dreamstime.com/b/plaza-de-cibeles-madrid-night-plaza-de-cibeles-madrid-palace-communication-night-106851221.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Plaza de Cibeles</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://www.discoverimages.com/p/251/roman-aqueduct-segovia-castile-leon-spain-20342451.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Aqueduct of Segovia</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://cdn.theculturetrip.com/wp-content/uploads/2016/10/plaza-espana-seville.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Plaza de España</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3 class="pick-title">FRANCE</h3>
+                <hr>
+                <div id="content">
+                    <div class="city-info">
+                        <h4>Paris, France</h4>
+                        <div class="spots-list">
+                            <div class="spot-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1i2Zks6vAiUUbbdseTL8NRvISPaork61zkA&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Eiffel Tower</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://mymodernmet.com/wp/wp-content/uploads/2021/03/louvre-online-collections-paris-1.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Louvre Museum</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://lp-cms-production.imgix.net/2020-11/shutterstockRF_1133572007.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Arc de Triomphe</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://www.planetware.com/photos-large/F/france-paris-notre-dame-cathedral.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Cathédrale Notre-Dame de Paris</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLJawo9GNwmhROKjB1QVOTJrh1bNQeqC8Ycw&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Palace of Versailles</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://www.parisperfect.com/g/photos/upload/sml_762877544-1484631931-Sacre-HERO.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Sacré-Cœur</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3 class="pick-title">ITALY</h3>
+                <hr>
+                <div id="content">
+                    <div class="city-info">
+                        <h4>Milan, Italy</h4>
+                        <div class="spots-list">
+                            <div class="spot-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxIO-glsW6Ra3VkIrC6zkZi1VCDZOgUHcQIw&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Duomo di Milano</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://aecom.com/ar/wp-content/uploads/2016/10/01-900x531.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Piazza Gae Aulenti</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ZdfdXRX17R7IlWaIPSRZJH9uxPJvshozXw&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Bosco Verticale</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://live.staticflickr.com/65535/33630763554_7886631c20_b.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Arco della Pace</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="http://www.residencedesenzano.it/wp-content/uploads/2016/01/basilica_san_lorenzo_milano.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Basilica San Lorenzo Maggiore</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://cenacolovinciano.org/wp-content/uploads/2019/06/Museo-Cenacolo-Vinciano-Dentro-il-Cenacolo-Santa-Maria-delle-Grazie-Esterno.jpg"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Santa Maria delle Grazie</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3 class="pick-title">NETHERLANDS</h3>
+                <hr>
+                <div id="content">
+                    <div class="city-info">
+                        <h4>Amsterdam, Netherlands</h4>
+                        <div class="spots-list">
+                            <div class="spot-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBsbjyDEqfkR-s8W-bF2Ik4wYbArrS_yYehg&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Rotterdam</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img 
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCptH8TkiGjrNuo4ZEaZUQh0CHRVO9ntgrYQ&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Rijksmuseum</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTww6hpzG2LpCC3r9zkwjvte4_OlrXO4_paA&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Dam Square</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHihNPgpidlWMZxVsJ7TfqwbB8iuIN3xDQPQ&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>NEMO Science Museum
+                                </h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpZWa0iXQqLSPNcGJh683_uOyXMHObE43vQ&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Bloemenmarkt</h5>
+                            </div>
+                            <div class="spot-info">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEdixWZf0KtjBshzserGr4ZFzbdK8S-ni7pA&usqp=CAU"
+                                style="width:150px; height: 150px" alt="spot"/>
+                                <h5>Amsterdam Centraal</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            
         </section>
     </body>
 </html>

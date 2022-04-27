@@ -1,17 +1,28 @@
 html {
     font-family: fantasy;
-    background-color: whitesmoke;
+    background-color: white;
 }
 #header {
+    background-color: peachpuff;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    height: 60px;
+}
+#mySearch {
+    font-size: 20px;
+    margin: 10px;
+}
+#nav-bar {
     display: flex;
     flex-direction: column;
 }
 h1 {
     display: flex;
     flex: 3;
-    font-size: 6rem;
+    font-size: 4rem;
     font-family:fantasy;
-    color:whitesmoke;
+    color:peachpuff;
     text-shadow: 2px 2px 4px #000000;
     justify-content: center;
     margin: 0;
@@ -20,23 +31,24 @@ nav {
     display: flex;
     flex: 2;
     flex-direction: row;
-    justify-content: space-evenly;;
+    justify-content: space-evenly;
     font-size: 1rem;
+    background-color:peachpuff;
 }
 .nav-item {
     display: flex;
-    padding: 1rem;
+    padding: 1%;
 }
 .nav-item:hover {
-    color: peachpuff;
+    color: salmon;
     transition: background-color 1s;
 }
 #about {
-    background-image: url(https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbCUyMGFlc3RoZXRpY3xlbnwwfHwwfHw%3D&w=1000&q=80);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfQAJCigQ6oSxwpn1KUKC2LClBQohYcfgRg&usqp=CAU);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,24 +56,101 @@ nav {
 .intro {
     width: 100%;
     height: 80%;
-    font-size: x-large;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+.welcome {
+    font-size: 3rem;
+    background: none;
+}
+.welcome-par {
+    font-size: 30px;
+    margin: 1%;
+}
+.start-button {
+    margin: 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-family: fantasy;
+    background-color: peachpuff;
+}
+.pick-title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: peachpuff;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+h4 {
+    font-size: 1rem;;
+    margin: 1;
+    text-align: center;
+}
+#content {
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.start-button {
-    font-size: 1rem;
-    border-radius: 10px;
-    font-family: fantasy;
-    background-color: lightgray;
+
+#uname {
+    border: white;
 }
-.pick-text {
+.logo-list-1 {
+    display: flex;
+    flex-direction: row;
+}
+.logo-list-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+    margin: 1%;
+    flex: 2;
+    align-items: center;
+}
+.flight-list {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.logo {
     display: flex;
     width: 100%;
-    height: 15%;
-    font-size: 100px;
-    text-align: center;
+    height:100%;
+    margin: 1%;
+    flex: 1;
+    align-self: center;
 }
+legend {
+    font-size: x-large;
+}
+label {
+    font-size: large;
+}
+.plan-list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    flex: 2;
+    align-self: center;
+}
+
 #destinations > div {
     display: flex;
     flex-flow: row wrap;
@@ -70,18 +159,27 @@ nav {
 .country {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     border-color: black;
-    margin: 1rem;
-    border-radius: 3rem;
+    margin: 1%;
+    border-radius:2rem;
     border-color: white;
+    align-items: center;
 }
 .country:hover {
-    background-color:darksalmon;
+    background-color:salmon;
     border: thick double gray;
     transition: 1s;
 }
 .country-name {
     text-shadow: 2px 2px 4px gray;
     text-align: center;
+}
+.spots-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+h5 {
+    text-align: center;
+    width:150px;
+    height:15px;
 }
